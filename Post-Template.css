@@ -1,0 +1,150 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 835px;
+}
+
+.u-section-1 .u-post-details-1 {
+  min-height: 375px;
+  margin-top: 60px;
+  margin-bottom: -10px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1 .u-image-1 {
+  height: 486px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.u-section-1 .u-text-1 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.u-section-1 .u-metadata-1 {
+  margin-top: 30px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin-bottom: 0;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-image-1 {
+    margin-left: initial;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 782px;
+  }
+
+  .u-section-1 .u-post-details-1 {
+    margin-bottom: 60px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 423px;
+    margin-left: initial;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 722px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 354px;
+    margin-top: 9px;
+    margin-left: initial;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 656px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 275px;
+    margin-left: initial;
+  }
+}
+
+/* ini: Preloader */
+ 
+#preloader {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#F27620; /* cor do background que vai ocupar o body */
+  z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+  position: absolute;
+  top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+.bolas > div {
+display: inline-block;
+background-color: #fff;
+width: 25px;
+height: 25px;
+border-radius: 100%;
+margin: 3px;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+animation-name: animarBola;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+ 
+}
+.bolas > div:nth-child(1) {
+  animation-duration:0.75s ;
+  animation-delay: 0;
+}
+.bolas > div:nth-child(2) {
+  animation-duration: 0.75s ;
+  animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3) {
+  animation-duration: 0.75s  ;
+  animation-delay: 0.24s;
+}
+
+@keyframes animarBola {
+0% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+16% {
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  opacity: 0.7;
+}
+33% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1; 
+} 
+}
+/* end: Preloader */
